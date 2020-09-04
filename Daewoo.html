@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>조택민의 자동차월드</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">현대자동차 (준비중)</a>
+        <a href="Daewoo.html" class="w3-bar-item w3-button w3-hover-white">대우자동차</a> <!-- w3-hide small 지움. -->
+        <a href="1980s.html" class="w3-bar-item w3-button w3-hover-white">80's</a> <!-- w3-hide small 지움. -->
+    </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#info">홈페이지 작성자 정보</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Diesel">로얄 디젤</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#XQ">XQ엔진</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#론지">론지엔진</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#efi">EFI엔진</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#msts">MSTS(FBC)엔진(르망초기)</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#tbi">TBI엔진(르망)</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#cfi">CFI엔진(르망 이름셔/에스페로)</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#mpfi">MPFI엔진(프린스)</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64" id="info"> <!--w3-padding-64추가 및 id 이동-->
+        <div class="w3-container"> <!--w3-twothird 삭제-->
+            <h1 class="w3-text-teal">홈페이지 작성자 올림</h1>
+            <p>
+                우석대학교 정보보안학과 17학번 조택민.<br>
+                국가자격 자동차정비기능사 자격증 보유.<br>
+                1종 대형면허 보유.<br>
+                저는 비록 컴퓨터를 주 전공한 학생이지만, 자동차에도 관심이 많습니다.
+                특히 옛날 물건을 좋아하고 모으는 것을 취미로 하기 때문에 자동차도 옛날 자동차를 좋아합니다.<br>
+                저의 드림카는 대우 로얄 프린스, 무쏘 602EL 수동(벤츠 OM602 엔진), 현대 스텔라, 현대 엘란트라 등입니다.<br>
+                특히 Carburetor(기화기), Plunger(부란자)와 같은 기계식 엔진을 선호하고 있지만 해당 차량들의 대부분이 삼원촉매나 매연저감장치를 달고 있지 않아서
+                배출가스 등급제에 5등급으로 분류돼 폐차되는 실정이 안타깝기만 합니다.
+                (--그래서 나중에 기회가 된다면 꼭 올드카를 수집하고 싶읍니다.--)<br>
+                아무튼 취미로 자동차를 고치지만, 컴퓨터 하드웨어도 잘 압니다.
+                자주 보는 애니메이션이 있기는 한데... 저보다 어른들이 더 좋아하실 내용입니다.
+                <br>하니, 우주의 원더키디 2020, 날아라 슈퍼보드...(심지어 받아놨음)<br>
+                옛날것을 보며 지나간 시대를 느껴봅시다. 감사합니다.
+            </p>
+            <a href="./old/op-5.html">이전에 제작한 페이지</a>
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">영상</h1>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YFgJALHvXrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe><br> <!--컨테이너의 0, 0좌표로 IFRAME 출력.-->
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="Diesel">
+        <div class="w3-container"><!--w3-twothird 삭제-->
+            <h1 class="w3-text-teal"><a href="https://ko.wikipedia.org/wiki/%EB%8C%80%EC%9A%B0_%EB%A1%9C%EC%96%84#%EB%A1%9C%EC%96%84_%EB%94%94%EC%A0%A4" target="_blank">로얄 디젤엔진</a></h1>
+            <p>대우자동차 디젤세단의 포문을 연 로얄 디젤의 2리터급 디젤엔진.
+                레코드와 아스코나에 사용된 것으로, 대한민국 디젤세단의 계보를 시작한 점에서 중요한 엔진이다.
+
+                로얄 디젤의 경우에는 배기량 1,978cc에 최고출력 65마력으로, 현재로써는 낮은 마력이지만 당시 기준으로 강한 힘과
+                저렴한 연료비를 통한 높은 연비를 낼 수 있어 콜택시 등으로 자주 사용되었다고 한다.
+                다만 당시 세계적으로 디젤 엔진에 대한 적극적인 계발의 움직임이 없어 상용차에 장착할 엔진을 승용에다 장착을 하다보니,
+                시끄러운 소음은 유럽산 엔진이어도 어쩔수는 없었다고 한다.
+                이렇게 로얄 디젤의 경우에는 대우자동차로 사명이 전환되고 나서도 계속 판매되어, 1985년에 가솔린 모델인 듀크와
+                동일한 모양으로 부분변경을 거쳐 계속 판매되다 1989년까지 판매되었다.</p>
+        </div>
+        <div class="w3-container"><!--w3-third 삭제-->
+            <img src="media/Diesel1.png" width="300" alt="로얄 디젤">
+            <img src="media/Diesel2.jpg" width="300" alt="로얄 디젤 후기">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="XQ">
+        <div class="w3-container">
+            <h1 class="w3-text-teal"><a href="https://ko.wikipedia.org/wiki/%EB%8C%80%EC%9A%B0_%EB%A1%9C%EC%96%84" target="_blank">XQ엔진</a></h1>
+            <p>대우 XQ엔진. 차체까지 완전 국산화하는 데 시간이 걸리긴 했지만,
+                엔진만큼은 대우자동차도 빠른 시일 내에 국산화를 했다는 증거로써, 상당히 중요한 엔진이다.
+                1981년 개발을 시작해 2년동안의 연구 끝에 출시된 것이 바로 대우자동차 최초의 고유개발 엔진인 1,500cc급 'XQ'엔진으로,
+                차체나 하체류같은 세부적인 것 까지는 아니어도 엔진이나 변속기같은 파워트레인 부분을 변경해 국산화를 이루고자 하였다.
+
+                이렇게 개발된 XQ엔진은, 당시 대우의 중형차 다변화 전략에 따라 로얄 XQ와 소형차 맵시에 처음 장착되었으며,
+                당시 비슷한 시기 출시된 현대의 스텔라, 포니와 경쟁하였다.
+
+                로얄 XQ에 장착된 XQ엔진은 85마력에 150km/h의 속력(LPG는 76마력에 151km/h)을 낼 수 있었으며,
+                최신식 기화기를 장착해 완전연소를 유도하도록 해 연료소모율을 최소화하였고,
+                그 결과 가솔린 모델 기준 12.5km/L의 연비를 기록하여 실용적인 연비를 자랑하였다.
+
+                또한 XQ엔진은 당시 독일의 보쉬(BOSCH)사에서 들여온 무접점 전자포인트와
+                자동 초크방식을 도입해 시대를 한 발 앞서나간 기술력을 자랑하기도 하였다.
+
+                맵시-나에 장착되어 큰 호평을 받은 XQ엔진은 소형모델 뿐만 아니라 전술했듯 중형모델인 로얄 XQ를 비롯한 대우차의 중형 모델들에도 장착되었는데,
+                문제는 호쾌한 주행성을 가진 맵시와는 다르게, 중형급에 장착된 모델들은 로얄의 무거운 무게와 더불어 제 성능을 내지 못해
+                '절름발이 세단'이라는 오명을 쓰고 몇몇 자동차 커뮤니티에서는 오늘날까지도 저평가 받고있기도 하다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/XQ1.jpg" width="300" alt="XQ엔진">
+            <img src="media/Maepsy-Na.jpg" width="300" alt="맵시-나">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="론지">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">론지엔진</h1>
+            <p>대우 론지엔진. 중형급에서의 XQ엔진이 악평을 받자 모델체인지를 하면서 새로 들여온 엔진이다.
+
+                대우자동차에서는 로얄 XQ를 1987년에 모델 체인지한 신모델, '로얄 듀크(사진)'를 출시한다.
+                듀크의 경우에는 이전 XQ엔진의 악평으로 인해 XQ엔진을 버리고, 신형 엔진인 론지 엔진을 도입하였다.
+                론지 엔진의 경우에는 가솔린 1.5리터급 모델의 경우 89마력을 기록하였으며, 12.9kg.m의 토크로 확실히 이전의 XQ엔진보다 나아진 출력을 기록하였다.
+
+                LPG모델의 경우 82마력을 기록하였으며, 맵시-나의 택시모델인 '맵시-나 시그마'와 듀크의 택시모델인 '듀크시티'에 장착되었다.
+                론지엔진은 초기형 르망의 MSTS타입 엔진과 비슷한 포맷으로, 독일의 피어부르크(Pierburg)사에서 연료절약형의
+                전자제어식 신형 캬브레터를 도입하였으며, XQ 엔진에 적용된 최신 무접점 전자포인트가 유지되었고,
+                유압식 태핏과 전동 모터팬으로 인해 엔진소음이 조용해졌다.
+                또 욕조형 연소실, 에어크리너 유입온도 자동조절장치로 배출가스 저감을 이끌어내었다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/Longe1.png" width="300" alt="론지엔진">
+            <img src="media/Duke.jpg" width="300" alt="듀크">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64 w3-row" id="efi">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">EFI엔진</h1>
+            <p>EFi 엔진은 LE 형으로 분류되는 초기형 EFi엔진으로, MPi 분사제어방식을 통해 연료를 제어하였으며,
+                특이하게도 당시 대우자동차의 다른 엔진 유닛들과는 다르게 산소센서와 촉매컨버터가 장착되지 않았다.
+                이외에는 타이밍 체인이 적용되었으며, 기존의 구형 엔진들 대비 20%의 연비 상승을 이끌어내어 효율성을 높였다.
+
+                또 출력또한 120마력으로 당시 국내 출시 승용차량들 중 최고의 출력을 자랑하였으며,
+                미국의 자동차 부품사인 벤딕스 사에서 개발한 VAFS(Vain Air Flow Sensor, 베인 식 공기량 센서)를 적용해
+                MPi 시스템과 맞물려 엔진에 들어오는 직접적인 전체 공기량 측정을 통해 엔진의 전자제어를 할 수 있도록기술적인 진보를 이끌어내었다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/EFI1.png" width="300" alt="EFI엔진">
+            <img src="media/MPI.gif" width="300" alt="MPI전자분사방식">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="msts">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">MSTS(FBC)엔진(르망초기)</h1>
+            <p>르망의 MSTS(FBC)엔진. 88년 9월 르망에 TBi 엔진이 장착되기 전의 극 초기형 모델들에 장착되었으며, 카뷰레터 방식이다.
+
+                MSTS(FBC)엔진은 카뷰레터와 MPi 방식이 합쳐진 방식으로, 카뷰레터에 컴퓨터를 이용해 연료분사량을 제어하며
+                산소 센서에서 생성된 정보를 ECU에 입력해 그 출력신호로 3속 자동 전자밸브를 제어하는 방식이다.
+
+                이 엔진에서 기존의 엔진들과는 다른 모양의 욕조형 연소실을 채택하였고, 하이드로(유압식) 타펫, 와류식 흡입 매니폴드 및 분리형
+                흡, 배기 매니폴드 적용, 이전 XQ엔진부터 적용해온 신 기술인 무접점 전자포인트와 전자초크를 채택해 시동이 용이하도록 꾀하였다.
+
+                또 엔진 회전수와 관계없이 엔진을 냉각시켜주는 전동 팬을 적용해 열 효율 또한 이전과 비교할 때 상당부분 개선되었고,
+                등판성능 및 가속력이 개선되었다. 연비 또한 당시 측정기준으로 60km/h 정속 주행 시 리터당 25km/L 라는,
+                지금으로써도 경이로운 연비를 자랑하였으며, 복합연비는 16.5km/l를 기록해 높은 연비를 자랑했다.
+                마력 또한 89마력으로 기존의 XQ엔진에 비해 4마력 증가하였으며, 엔진의 크기 또한 컴팩트하게 설계되어 경량한 무게를 자랑하였고,
+                정비성 또한 이전에 비해 유례없이 개선되었다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/MSTS.png" width="300" alt="MSTS엔진">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="tbi">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">TBI엔진(르망)</h1>
+            <p>대우 르망에 장착된 TBi 엔진(G15SF).
+
+                1988년 9월, 수출형 모델의 파워트레인 변경으로 신형 TBi 엔진이 도입되고, 이에 따라 대우자동차도 신형 엔진을 장착하게 되는데,
+                이로인해 장착된 것이 바로 이 TBi 엔진이다. 대우자동차가 새로 도입한 TBi엔진은 이전에 사용하던
+                MSTS(G15CF) 엔진에 적용되었던 분사방식과는 달라졌는데, 이전의 엔진이 전자분사와 캬브레터 제어를 같이 사용하였다면,
+                TBi엔진은 오로지 전자제어로만 분사를 하도록 설계되었기 때문이다. 이는 동급의 국내 소형차량들 중 최초로 적용된 분사방식이다.
+
+                TBi엔진은, 이전과 같이 ECM을 그대로 적용해 전자제어에 최적화되었으며, 캬브레터를 사용하던 종전과는 다르게
+                완전한 컴퓨터 제어방식으로 전환되어 배기가스 저감 및 연비효율에 있어서도 상당 수 개선이 되었다.
+                당시 대우자동차의 최고급 모델인 로얄 시리즈에도 적용되지 않은 신기술인 '자체진단기술'이 내장된
+                3세대 마이크로 프로세서를 적용해 정비가 쾌적하게 진행되도록 하였다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/TBI1.jpg" width="300" alt="TBI엔진">
+            <img src="media/TBI2.jpg" width="300" alt="TBI엔진">
+            <img src="media/SPI.jpg" width="300" alt="SPI전자분사방식">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64 w3-row" id="cfi">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">CFI엔진(르망 이름셔/에스페로)</h1>
+            <p>르망 이름셔/임팩트와 초기형 에스페로의 2.0급 CFi 엔진(C20LZ) 엔진.
+
+                오펠에서 들여온 120마력의 CFi엔진을 장착한 모델들을 위해 임팩트와 이름셔 트림을 각각 신설하는데,
+                이 오펠의 2리터급 엔진의 경우 제로백(0-97km/h)이 9.2초에 최고시속 185km/h를 기록해 당대 최강의 성능을 자랑하였다.
+                한편 오펠 사의 자동차를 전문적으로 튜닝하는 튜너집단 '이름셔'의 스페셜 커스터마이징을 거친 스페셜리티 모델인
+                '이름셔(Irmscher)' 버전의 경우, 이름셔의 스페셜리티 파츠로 엔진이 튜닝되었으며,
+                부품 경량화와 차체 경량화를 통해 임팩트보다 더욱 더 높은 출력을 자랑해 '공도의 제왕'이라는 이름으로 불렸다고 한다.
+                또한 당시 대우자동차의 신형 모델인 '에스페로'에 장착되어 '2,000cc 新 중형세단'이라는 광고 마케팅과 함께 판매되었다.
+                에스페로의 경우에는 100마력으로 디튠되었으나 대신 연비효율이 좋아져 당시 공인연비 기준 13.5km/L라는 준수한 연비를 기록하기도 하였다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/CFI.jpg" width="300" alt="CFI엔진">
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="mpfi">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">MPFI엔진(프린스)</h1>
+            <p>대우 프린스에 적용된 홀덴 개발 2.0 MPFi(SOHC) 엔진. (사진은 1.8 엔진) 1999년 12월 프린스 택시가 단종될 때 까지 쭉 프린스에 적용되었다.
+
+                2,000cc급 엔진을 당시 홀덴에서 새롭게 개발한 신형 엔진으로 대체하는데, 이러한 사정으로 나온 엔진이 바로 위의 MPFi 엔진이다.
+                대우 측에서 새로 선보인 MPFi 엔진은 엔진의 설계 상 보어와 스트로크가 같은 스퀘어 타입 엔진으로,
+                기존 오펠의 128마력 EFi 엔진을 대체하는 용도로 투입되었으며, 출력이 115마력으로 기존보다 많이 줄어들기는 하였으나
+                최대 토크를 2,600rpm부터 터지도록 설정해 놓아 '중, 저속에서도 잘 나간다'라는 이미지를 심기 위해 노력한 것이 보인다.
+                직접점화시스템(DIS)은 점화 타이밍을 전자제어로 조절해 스파크 타이밍의 정확성을 극대화 시키면서 엔진의 성능을 끌어올렸다.
+                또 르망과 에스페로 등을 통해 선보여온 ECM(엔진자체 진단기능)을 적용해 정비성을 극대화 시킨 것 또한 장점이라면 장점이었다.
+                또 1992년에는 1,800cc 110마력으로도 다운사이징 된 모델도 출시되었다.</p>
+        </div>
+        <div class="w3-container">
+            <img src="media/MPFI.jpg" width="300" alt="MPFI엔진">
+        </div>
+    </div>
+
+
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4>제작 : 120170960 조택민.</h4>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+            <p>출처 : <a href="https://m.blog.naver.com/kdy4688/220896094033" target="_blank">https://m.blog.naver.com/kdy4688/220896094033</a></p>
+        </div>
+    </footer>
+
+    <!-- END MAIN -->
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
